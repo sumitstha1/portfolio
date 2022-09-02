@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #121212;
+}
+
+.upper-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -5%;
+    margin-right: 20%;
+    /* background-color: #121212; */
+}
+
+.head-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.heading{
+    font-family: 'Roboto', sans-serif;
+    color: #b2beb5;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.foot-div{
+    margin-top: 18px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    margin-left: 60px;
+}
+
+.button{
+    text-decoration: none;
+    color: cornsilk;
+    padding: 14px 50px;
+    background-color: rgba(30, 30, 206, 0.782);
+    border-radius: 6px;
+    font-family: Ubuntu;
+}
+
+.button:hover{
+    background-color: blue;
+}
+
+.img-profile{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .heading{
+        font-size: 30px;
+        margin: 10vh;
+    }
+}
