@@ -6,6 +6,10 @@ Portfolio | Sumit Shrestha
 {% load static %}
 
 {% block body_content %}
+<div class="upper-bar">
+  <a href="{% url 'register' %}"><button class="btn">Sign Up</button></a>
+  <a href="{% url 'login' %}" class="btn-t">Login</a>
+</div>
   <div class="infoContainer">
     <div class="devInfo">
       <div class="hello">Hello I am</div>

@@ -7,6 +7,50 @@
     padding: 0;
 }
 
+.upper-bar{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+}
+
+.btn{
+    padding: 9px 35px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(68, 68, 226);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 20px;
+}
+
+.btn:hover{
+    background-color: blue;
+    box-shadow: 0 0 20px blue;
+}
+
+.btn-t{
+    padding: 9px 35px;
+    border-radius: 22px;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 20px;
+    border: transparent;
+    text-decoration: none;
+    
+}
+
+.btn-t:hover{
+    text-shadow: 0 0 20px white;
+}
+
 .sidebar{
     /* background-color: rgb(144, 144, 144); */
     width: 320px;
