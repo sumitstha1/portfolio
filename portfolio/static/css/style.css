@@ -1,76 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-html{
-    padding: 0;
+*{
     margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+    padding: 0;
 }
 
-body{
-    background: #121212;
-}
-
-.upper-section{
+.sidebar{
+    /* background-color: rgb(144, 144, 144); */
+    width: 320px;
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin-top: -5%;
-    margin-right: 20%;
-    /* background-color: #121212; */
 }
 
-.head-div{
-    display: flex;
-    flex-direction: row;
+.sidebar nav{
+    padding: 20px;
 }
 
-.heading{
-    font-family: 'Roboto', sans-serif;
-    color: #b2beb5;
-    font-size: 75px;
-    font-weight: bold;
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 30px 0;
 }
 
-.foot-div{
-    margin-top: 18px;
-}
-
-.left{
-    display: flex;
-    flex-direction: column;
-}
-
-.right{
-    margin-left: 60px;
-}
-
-.button{
+.sidebar nav li a{
     text-decoration: none;
-    color: cornsilk;
-    padding: 14px 50px;
-    background-color: rgba(30, 30, 206, 0.782);
-    border-radius: 6px;
-    font-family: Ubuntu;
+    color: bisque;
 }
 
-.button:hover{
+.sidebar nav li a:hover{
+    text-shadow: 0 0 20px bisque;
+    color: bisque;
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 88vw;
+}
+
+.container{
+    display: flex;
+    background: url('../bg.jpg');
+    mix-blend-mode: darken;
+}
+
+.infoContainer{
+    /* background-color: green; */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 6vw;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+
+.hello{
+    font-size: 65px;
+}
+
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    color: #121212;
+    text-shadow: 0 0 20px bisque;
+}
+
+.about{
+    font-size: 23px;
+    color: grey;
+}
+
+.buttons{
+    margin-top: 34px;
+}
+
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(68, 68, 226);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.buttons button:hover{
     background-color: blue;
+    color: white;
+    box-shadow: 0 0 20px blue;
 }
 
-.img-profile{
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
+.devPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-@media screen and (max-width: 800px) {
-    .heading{
-        font-size: 30px;
-        margin: 10vh;
-    }
+.devPic img{
+    height: 58vh;
 }

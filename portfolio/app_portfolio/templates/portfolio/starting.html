@@ -1,68 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Sumit Shrestha</title>
-    {% load static %}
-    <link rel="shortcut icon" href="{% static 'profile.jpg' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    
-</head>
-<body>
-    <section class="upper-section">
-        <div class="left">
-            <div class="head-div">
-                <span class="heading">WELCOME TO<br>
-                    MY PORTFOLIO</span>
-            </div>
-            <div class="foot-div">
-                <a href="{% url 'index' %}" class="button">EXPLORE</a>
-            </div>
-        </div>
-        <div class="right">
-            <div class="img">
-                <img src="{% static 'profile.jpg' %}" alt="profile img" class="img-profile">
-            </div>
-        </div>
-    </section>
-    <!-- <section class="lower-section">
-        <div class="head-div">
-            <p>you are welcomed to my portfolio</p>
-        </div>
-        <div class="img"><img src="{% static 'profile.jpg' %}" alt=""></div>
-    </section> -->
+{% extends 'layouts/start.html' %}
 
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
+{% block title %}
+Portfolio | Sumit Shrestha
+{% endblock %}
+{% load static %}
 
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
+{% block body_content %}
+  <div class="infoContainer">
+    <div class="devInfo">
+      <div class="hello">Hello I am</div>
+      <div class="name">Sumit Shrestha</div>
+      <div class="about">Web Designer & Developer(HTML, CSS, JS & Django)</div>
+      <div class="buttons">
+        <a href="{% static 'pdf/Sumit shrestha_cv.pdf' %}"><button>Download CV</button></a>
+        <a href="{% url 'contact' %}"><button>Contact Me</button></a>
+      </div>
     </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "110210881822784");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v14.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-</body>
-</html>
+    <div class="devPic"><img src="{% static 'devimg.png' %}" alt="welcome image"></div>
+  </div>
+{% endblock %}
