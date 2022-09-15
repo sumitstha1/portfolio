@@ -6,15 +6,18 @@ Portfolio | Sumit Shrestha
 {% load static %}
 
 {% block body_content %}
-<div class="upper-bar">
-  <a href="{% url 'register' %}"><button class="btn">Sign Up</button></a>
-  <a href="{% url 'login' %}" class="btn-t">Login</a>
-</div>
   <div class="infoContainer">
     <div class="devInfo">
+    
+
       <div class="hello">Hello I am</div>
       <div class="name">Sumit Shrestha</div>
-      <div class="about">Web Designer & Developer(HTML, CSS, JS & Django)</div>
+      <div class="about-div">
+        <span class="about"></span>
+
+      </div>
+      
+    
       <div class="buttons">
         <a href="{% static 'pdf/Sumit shrestha_cv.pdf' %}"><button>Download CV</button></a>
         <a href="{% url 'contact' %}"><button>Contact Me</button></a>
@@ -22,4 +25,15 @@ Portfolio | Sumit Shrestha
     </div>
     <div class="devPic"><img src="{% static 'devimg.png' %}" alt="welcome image"></div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script>
+    var typed = new Typed(".about", {
+    strings: ["Web Designer", "Web Developer", "HTML", "CSS", "JavaScript", "Django"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+})
+  </script>
 {% endblock %}

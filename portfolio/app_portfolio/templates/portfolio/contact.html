@@ -1,10 +1,28 @@
 {% extends 'layouts/start.html' %}
 
-{% load static %}
+
 {% block title %}
 Contact | Sumit Shrestha
 {% endblock %}
 
-{% block body_content %}
+{% load static %}
 
+
+{% block body_content %}
+<div class="developer">
+    <div class="main-dev">
+        <div class="dev-information">
+            <div class="devname">Sumit Shrestha</div>
+            <div class="devemail"><a href="mailto:edchristian.inventor@gmail.com">edchristian.inventor@gmail.com</a></div>
+            <div class="contact"><a href="tel:+9779815980798">9815980798</a></div>
+            <div class="address"><a href="https://maps.app.goo.gl/nxeWAy7roaYjWgnZ9/" target="_blank">Chabahil- 07, Kathmandu</a></div>
+            <div class="row-btn">
+                <a href="https://www.facebook.com/sumitstha911/" target="_blank"><button class="social fb"><ion-icon name="logo-facebook"></ion-icon></button></a>
+                <a href="https://www.instagram.com/sumit_shrestha12/" target="_blank"><button class="social insta"><ion-icon name="logo-instagram"></ion-icon></button></a>
+                <a href="https://www.youtube.com/c/SumitShrestha1" target="_blank"><button class="social yt"><ion-icon name="logo-youtube"></ion-icon></button></a>
+            </div>
+        </div>
+        <div class="dev-picture"><img src="{% static 'profile.jpg' %}" alt=""></div>
+    </div>
+</div>
 {% endblock %}

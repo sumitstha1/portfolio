@@ -9,8 +9,24 @@
 
 .upper-bar{
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-around;
     margin: 20px;
+}
+
+.right-bar{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    margin: 20px;
+    margin-right: -26vw;
+}
+
+.left-bar{
+    display: flex;
+    margin-left: -25vw;
+    top: 10px;
+    left: -20vw;
+    position: relative;
+
 }
 
 .btn{
@@ -61,6 +77,11 @@
     align-items: center;
 }
 
+.sidebarGo{
+    transform: translate(-443px, 0);
+    position: absolute;
+}
+
 .sidebar nav{
     padding: 20px;
 }
@@ -89,7 +110,7 @@
 .container{
     display: flex;
     background: url('../bg.jpg');
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
 }
 
 .infoContainer{
@@ -124,11 +145,21 @@
 
 .about{
     font-size: 23px;
-    color: grey;
+    color: yellow;
+    font-weight: 600;
+}
+
+.about-div{
+    display: flex;
+    flex-direction: row;
+    font-size: 23px;
+    color: yellow;
 }
 
 .buttons{
-    margin-top: 34px;
+    margin-top: 250px;
+    position: absolute;
+    margin-left: -1vh;
 }
 
 .buttons button{
@@ -158,3 +189,11 @@
 .devPic img{
     height: 58vh;
 }
+
+@media screen and (max-width: 803px){
+    /* .sidebar{
+        transform: translate(-443px, 0);
+        position: absolute;
+    } */
+}
+    
