@@ -1,5 +1,6 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
+from hospitalmanager.views import HomeTemplateView
 
 urlpatterns = [
     # user login
@@ -11,4 +12,5 @@ urlpatterns = [
     path('', views.start_page, name='starting'),
     path('index/', views.port_index, name='index'),
     path('contact/', views.contact_page, name='contact'),
+    path('hospital/', HomeTemplateView.as_view(), name = 'project'),
 ]
