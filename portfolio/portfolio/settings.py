@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SK")
+SECRET_KEY = SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-)41_rokmg^rd6%(8scwi7!ungt9!@t*)+q#j_mh3id-1loxr^-')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -127,6 +127,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR), 'static/']
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
