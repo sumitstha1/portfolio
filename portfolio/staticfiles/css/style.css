@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    /* transition: 5ms ease-in-out; */
+}
+
+.upper-bar{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.right-bar{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    margin: 20px;
+    margin-right: -26vw;
+}
+
+.left-bar{
+    display: flex;
+    margin-left: -25vw;
+    top: 10px;
+    left: -20vw;
+    position: relative;
+
+}
+
+.btn{
+    padding: 9px 35px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(68, 68, 226);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 20px;
+}
+
+.btn:hover{
+    background-color: blue;
+    box-shadow: 0 0 20px blue;
+}
+
+.btn-t{
+    padding: 9px 35px;
+    border-radius: 22px;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 20px;
+    border: transparent;
+    text-decoration: none;
+    
+}
+
+.btn-t:hover{
+    text-shadow: 0 0 20px white;
+}
+
+.sidebar{
+    /* background-color: rgb(144, 144, 144); */
+    width: 320px;
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0);
+    position: absolute;
+}
+
+.sidebar nav{
+    padding: 20px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 30px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: bisque;
+}
+
+.sidebar nav li a:hover{
+    text-shadow: 0 0 20px bisque;
+    color: bisque;
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 88vw;
+}
+
+.container{
+    display: flex;
+    background: url('../bg.jpg');
+    mix-blend-mode: lighten;
+}
+
+.infoContainer{
+    /* background-color: green; */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 6vw;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+
+.hello{
+    font-size: 65px;
+}
+
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    color: #121212;
+    text-shadow: 0 0 20px bisque;
+}
+
+.about{
+    font-size: 23px;
+    color: yellow;
+    font-weight: 600;
+}
+
+.about-div{
+    display: flex;
+    flex-direction: row;
+    font-size: 23px;
+    color: yellow;
+}
+
+.buttons{
+    margin-top: 250px;
+    position: absolute;
+    margin-left: -1vh;
+}
+
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(68, 68, 226);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.buttons button:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 0 0 20px blue;
+}
+
+.devPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.devPic img{
+    height: 58vh;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media screen and (max-width: 803px){
+    /* .sidebar{
+        transform: translate(-443px, 0);
+        position: absolute;
+    } */
+}
+    

@@ -1,0 +1,28 @@
+{% extends 'layouts/start.html' %}
+
+{% block title %}
+Projects | Sumit Shrestha
+{% endblock %}
+
+{% load static %}
+
+
+{% block body_content %}
+
+<div class="project-content">
+    <div class="row">
+        <a href="{% url 'hospital' %}" class="project-link">
+            <div class="projects">
+                <img src="{% static 'img/hospital.png' %}" alt="hospital management project">
+                
+                <div class="pro-title">
+                    <h3>Project</h3>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolores.</div>
+                </div>
+                
+            </div>
+        </a>
+    </div>
+</div>
+
+{% endblock %}

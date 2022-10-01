@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.upper{
+    margin-top: 86px;
+}
+
+.lower{
+    margin-bottom: 110px;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    width: 36vw;
+    box-shadow: 10px 0 38px grey;
+}
+
+.field{
+    padding: 5px 70px;
+}
+
+.length{
+    padding: 5px 70px;
+}
+
+.button{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}

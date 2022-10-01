@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+{% block title %}
+Portfolio
+{% endblock %}
+
+{% block body_content %}
+
+{{ customer.first_name }}
+{% endblock %}

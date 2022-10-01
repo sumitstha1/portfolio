@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+.developer{
+    /* background-color: blanchedalmond; */
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-dev{
+    /* background-color: green; */
+    width: 58vw;
+    height: 30vw;
+    display: flex;
+    justify-content: end;
+    border: 2px solid grey;
+}
+
+.dev-information{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 34vw;
+    margin-left: 34px;
+}
+
+.devname{
+    font-family: 'Oswald', sans-serif;
+    font-size: 52px;
+    color: azure;
+}
+
+.devname:hover{
+    text-shadow: 0 0 12px white;
+}
+
+.devemail{
+    margin-top: 4px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.devemail a{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.devemail a:hover{
+    color: green;
+}
+
+.contact{
+    margin-top: 6px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.contact a{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.contact a:hover{
+    color: green;
+}
+
+.address{
+    margin-top: 6px;
+    font-family: 'Roboto Mono', monospace;
+    color: greenyellow;
+}
+
+.address a{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.address a:hover{
+    color: green;
+}
+
+.dev-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+
+.dev-picture img{
+    height: 20vw;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 10vw;
+    cursor: pointer;
+}
+
+.dev-picture img{
+    
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 10px;
+    border-radius: 22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 12px;
+}
+
+.fb{
+    background-color: #4267B2;
+}
+
+.insta{
+    background-color: #C13584;
+}
+
+.yt{
+    background-color: #FF0000;
+}
+
+.social:hover{
+    border: 1px solid white;
+    box-shadow: 0 0 20px grey;
+}
+
+.row-btn{
+    display: flex;
+    padding: 6px 6px;
+    margin-top: 250px;
+    position: absolute;
+    margin-left: -1vh;
+}
