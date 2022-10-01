@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 
 {% load static %}
+
+{% block title %}
+Bir Hospital | Home
+{% endblock %}
+
 {% block header %}
 <div class="container hero">
   <div class="row">
@@ -32,7 +37,8 @@
 
             
             <div class="col-xl-3 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static './img/team1.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <div class="bg-white rounded shadow-sm py-5 px-4">
+                    <img src="{% static './img/team1.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Dr Sai</h5>
                     <span class="small text-uppercase text-muted">Consultant anesthesiologist</span>
                 </div>
@@ -40,7 +46,8 @@
 
            
             <div class="col-xl-3 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static '/img/team2.jpg' %}" alt="" class=" mh-100 rounded-circle mb-3 img-thumbnail shadow-sm">
+                <div class="bg-white rounded shadow-sm py-5 px-4">
+                    <img src="{% static '/img/team2.jpg' %}" alt="" class=" mh-100 rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Dr Samuel </h5>
                     <span class="small text-uppercase text-muted">Consultant cardiothoracic</span>
                 </div>
@@ -48,7 +55,8 @@
 
             
             <div class="col-xl-3 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static '/img/team3.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <div class="bg-white rounded shadow-sm py-5 px-4">
+                    <img src="{% static '/img/team3.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Dr Sarra</h5>
                     <span class="small text-uppercase text-muted">Consultant dermatologist</span>
                 </div>
@@ -56,7 +64,8 @@
 
             
             <div class="col-xl-3 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static '/img/team4.png' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <div class="bg-white rounded shadow-sm py-5 px-4">
+                    <img src="{% static '/img/team4.png' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">DR John</h5>
                     <span class="small text-uppercase text-muted">Consultant Obstetrician</span>
                 </div>
@@ -127,7 +136,7 @@
         
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>   
         
@@ -199,19 +208,19 @@
               {% csrf_token %} 
               <div class="form-group">
                 <label for="name2">Name</label>
-                <input class="form-control" id="name2" name="name" type="text" placeholder="name">
+                <input class="form-control" id="name2" name="name" type="text" placeholder="Enter your Name...">
                 <div class="error" id="err-name" style="display: none;">Please enter name</div>
               </div>
   
               <div class="form-group">
                 <label for="email2">Email</label>
-                <input class="form-control" id="email2" name="email" type="text" placeholder="email">
+                <input class="form-control" id="email2" name="email" type="text" placeholder="Enter your email...">
                 <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
               </div>
   
               <div class="form-group">
                 <label for="message2">Message</label>
-                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="message">Message</textarea>
+                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="Leave your message here..."></textarea>
   
                 <div class="error" id="err-message" style="display: none;">Please enter message</div>
               </div>

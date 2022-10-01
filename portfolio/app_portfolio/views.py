@@ -4,7 +4,7 @@ from re import template
 from django.shortcuts import render, redirect
 
 from app_portfolio.forms import UserLogin, CreateUser
-from .models import AppUser, Patients
+from .models import AppUser
 
 # Create your views here.
 def login_page(request):
@@ -49,6 +49,13 @@ def contact_page(request):
     if not request.session.has_key('session_email'):
         return redirect("user.login")
     template = 'portfolio/contact.html'
+    return render(request, template)
+
+def project_page(request):
+    if not request.session.has_key('session_email'):
+        return redirect("user.login")
+
+    template = 'portfolio/projects.html'
     return render(request, template)
 
 def port_index(request):

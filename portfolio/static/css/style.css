@@ -196,6 +196,12 @@ html{
     height: 58vh;
 }
 
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 @media screen and (max-width: 803px){
     /* .sidebar{
         transform: translate(-443px, 0);

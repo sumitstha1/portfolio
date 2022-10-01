@@ -7,14 +7,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ title }}</title>
+  <title>
+    {% block title %}
+    {% endblock %}
+  </title>
   <!-- Bootstrap core CSS -->
   <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  
 </head>
 
 <style>
+  .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 {% block style %}
 {% endblock style %}
 </style>
@@ -74,11 +83,17 @@
 {% block content %}
 {% endblock content %}
 
+<footer class="footer">
+    <div class="copyright">&copy; 2022 Bir Hospital. All Rights Reserved.</div>
+</footer>
+
+
 
 <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 
 <script>
-   {% block script %}{% endblock %}
+   {% block script %}
+   {% endblock %}
 
 </script>
   

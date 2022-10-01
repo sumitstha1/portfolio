@@ -6,10 +6,19 @@ class CreateUser(forms.ModelForm):
         fields = ("first_name", "middle_name", "last_name", "email", "password", "img")
         model = AppUser
 
+
 class UserLogin(forms.ModelForm):
+
+    email = forms.CharField(widget=forms.TextInput(attrs={'class': 'field', 'placeholder': 'Enter your email address...'}))
+    password = forms.CharField(widget=forms.TextInput(attrs={'class': 'field', 'placeholder': 'Enter your password...'}))
     class Meta:
         fields = ("email", "password")
         model = AppUser
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['email'].label = ''
+        self.fields['password'].label = ''
 
 class PatientRegister(forms.ModelForm):
     class Meta:
