@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block style %}
     .card {
     padding: 30px 40px;
@@ -62,6 +63,8 @@
 {% block title %}
 Bir Hospital | Book an Appointment
 {% endblock %}
+
+{% block fav %}{% static './fav/appointment.png' %}{% endblock %}
 
 {% block content %}
 
