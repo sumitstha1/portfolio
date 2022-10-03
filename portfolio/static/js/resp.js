@@ -6,4 +6,3 @@ burger.addEventListener('click', ()=>{
     navbar.classList.toggle('sidebar-resp');
     navList.classList.toggle('listing-resp');
 })
-

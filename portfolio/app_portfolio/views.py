@@ -21,6 +21,7 @@ def login_page(request):
         return render(request, template, context)
     return render(request, template, context)
 
+
 def register_page(request):
     create_form = CreateUser()
     context = {"form": create_form}

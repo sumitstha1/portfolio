@@ -19,4 +19,18 @@ class Appointment(models.Model):
         ordering = ["-sent_date"]
         db_table = 'doctor'
 
+class DoctorLogin(models.Model):
+    first_name = models.CharField(max_length=100)
+    middle_name = models.CharField(max_length=100, blank=True, null=True)
+    last_name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=200, unique=True)
+    password = models.CharField(max_length=100)
+    specialization = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.first_name
+
+    class Meta:
+        db_table = "doctorlogin"
+
     

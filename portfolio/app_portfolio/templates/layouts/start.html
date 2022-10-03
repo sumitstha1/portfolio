@@ -22,16 +22,21 @@
 
 <body>
   <div class="container">
-    <div class="sidebar">
+    <div class="sidebar sidebar-resp">
       
-      <nav>
-        <ul>
+      <nav class="navbar">
+        <ul class="listing listing-resp">
           <li><a href="{% url 'starting' %}">Home</a></li>
           <li><a href="{% url 'project' %}">Project</a></li>
           <li><a href="{% url 'contact' %}">Contact Me</a></li>
           <li><a href="{% static 'pdf/Sumit shrestha_cv.pdf' %}">CV</a></li>
         </ul>
       </nav>
+      <div class="ham-nav">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+      </div>
     </div>
     <div class="main">
       
@@ -42,6 +47,8 @@
   </div>
 
   <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/resp.js' %}"></script>
+  <script src="{% static 'js/contact.js' %}"></script>
 </body>
 
 </html>

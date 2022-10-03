@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-)41_rokmg^rd6%(8scwi7!ungt9!@t*)+q#j_mh3id-1loxr^-')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'sumitportfolio12.herokuapp.com']
 

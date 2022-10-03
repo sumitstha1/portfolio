@@ -88,7 +88,7 @@ html{
     position: absolute;
 }
 
-.sidebar nav{
+.navbar{
     padding: 20px;
 }
 
@@ -120,9 +120,8 @@ html{
 }
 
 .infoContainer{
-    /* background-color: green; */
-    height: 58vh;
-    width: 80vw;
+    height: 52vh;
+    width: 82vw;
     margin: 144px auto;
     display: flex;
     justify-content: space-around;
@@ -200,12 +199,96 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-@media screen and (max-width: 803px){
-    /* .sidebar{
-        transform: translate(-443px, 0);
+.ham-nav{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    cursor: pointer;
+}
+
+.burger{
+    background-color: darkgoldenrod;
+    height: 4px;
+    width: 30px;
+    border-radius: 10px;
+    margin: 4px 0px;
+}
+
+@media screen and (max-width: 961px){
+
+    .ham-nav{
+        display: block;
+    }
+
+    .sidebar{
         position: absolute;
-    } */
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 76vh;
+        background-color: #1f1f1f;
+        z-index: 1;
+    }
+
+    .sidebar-resp{
+        height: 52px;
+        background-color: black;
+    }
+
+    .listing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .listing-resp{
+        opacity: 0;
+    }
+
+    .sidebar nav li{
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .devPic{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .hello {
+        font-size: 35px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .about{
+        font-size: 15px;
+    }
+
+    .about-div{
+        font-size: 15px;
+    }
+
+    .buttons{
+        margin-top: 192px
+    }
+
+    .buttons button{
+        padding: 6px 9px;
+        font-size: 14px;
+
+    }
 }
     

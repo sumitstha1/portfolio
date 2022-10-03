@@ -14,6 +14,7 @@ class AppUser(models.Model):
 
 
 
+
 class Patients(models.Model):
     full_name = models.CharField(max_length=200)
     age = models.IntegerField()

@@ -1,7 +1,10 @@
+from tkinter import Widget
 from django import forms
+from django.forms import MultiWidget
 from .models import AppUser, Patients
 
 class CreateUser(forms.ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput)
     class Meta:
         fields = ("first_name", "middle_name", "last_name", "email", "password", "img")
         model = AppUser
