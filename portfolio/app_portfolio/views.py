@@ -1,3 +1,4 @@
+from email import message
 from encodings import search_function
 from multiprocessing import context
 from re import template
@@ -25,18 +26,15 @@ def login_page(request):
 def register_page(request):
     create_form = CreateUser()
     context = {"form": create_form}
+    template = 'users/register.html'
     if request.method == "POST":
         user = CreateUser(request.POST, request.FILES)
 
         if user.is_valid():
             user.save()
-
             context.setdefault("msg", "Successfully Added")
-            template = 'users/register.html'
-            return render(request, template, context)
-        return redirect('user.register')
-
-    template = 'users/register.html'
+            return redirect('user.login')
+        return render(request, template, context)
     return render(request, template, context)
 
 

@@ -13,6 +13,11 @@
     <title>User Login</title>
   </head>
   <body>
+    {% if messages %}
+       {% for message in messages %}
+       <div class={{ message.tags }}>{{ message }}</div>
+       {% endfor %}
+    {% endif %}
     <div class="container">
       <div class="upper">
         <form action="{% url 'user.login' %}" method="POST">
