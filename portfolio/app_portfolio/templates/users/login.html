@@ -13,6 +13,18 @@
     <title>User Login</title>
   </head>
   <body>
+
+    {% if messages %}
+        <div class="card notification-card notification-invitation">
+            <div class="alert alert-success" role="alert">
+                {% for message in messages %}
+                    <div class="card-title">{{ message }}</div>
+                {% endfor %}
+            </div>
+        </div>
+
+    {% endif %}
+
     {% if messages %}
        {% for message in messages %}
        <div class={{ message.tags }}>{{ message }}</div>

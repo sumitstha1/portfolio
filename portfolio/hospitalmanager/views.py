@@ -56,6 +56,7 @@ class AppointmentTemplateView(TemplateView):
         appointment.save()
 
         messages.add_message(request, messages.SUCCESS, f"Thanks {fname} for making an appointment, we will email you ASAP!")
+        messages.add_message(request, messages.ERROR, f"Something Went wrong")
         return HttpResponseRedirect(request.path)
 
 

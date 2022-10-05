@@ -94,10 +94,6 @@
     cursor: pointer;
 }
 
-.dev-picture img{
-    
-}
-
 .social{
     display: flex;
     justify-content: center;
@@ -137,4 +133,54 @@
     margin-top: 250px;
     position: absolute;
     margin-left: -1vh;
+}
+
+@media screen and (max-width: 961px){
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .devname{
+        font-size: 20px;
+    }
+
+    .devemail, .contact, .address{
+        font-size: 8px;
+    }
+
+    .social{
+        font-size: 10px;
+        padding: 4px 4px;
+    }
+
+    .row-btn{
+        margin-top: 24%;
+    }
+
+    .main-dev{
+        width: 90vw;
+        height: 18vh;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid grey;
+    }
+
+    .dev-information{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        width: 60vw;
+        margin-left: 4px;
+    }
+
+    .dev-picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        margin-left: 18px;
+    }
+
 }

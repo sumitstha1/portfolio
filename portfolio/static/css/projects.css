@@ -54,3 +54,25 @@
 .project-link:hover{
     color: white;
 }
+
+@media screen and (max-width: 961px){
+
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .projects{
+        width: 94vw;
+        margin-bottom: 36px;
+        
+    }
+
+    .projects img{
+        width: 94vw;
+    }
+}

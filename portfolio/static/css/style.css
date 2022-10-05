@@ -10,7 +10,7 @@
 
 html{
     scroll-behavior: smooth;
-    /* transition: 5ms ease-in-out; */
+    transition: 5ms ease-in-out;
 }
 
 .upper-bar{
@@ -229,9 +229,10 @@ html{
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        height: 76vh;
+        height: 35%;
         background-color: #1f1f1f;
         z-index: 1;
+        transition: all 0.7s ease-out;
     }
 
     .sidebar-resp{
@@ -244,6 +245,7 @@ html{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transition: step-end 0.7s ease-out;
     }
 
     .listing-resp{

@@ -2,7 +2,9 @@ from email import message
 from encodings import search_function
 from multiprocessing import context
 from re import template
+from socket import timeout
 from django.shortcuts import render, redirect
+from django.contrib import messages
 
 from app_portfolio.forms import UserLogin, CreateUser
 from .models import AppUser
@@ -25,16 +27,20 @@ def login_page(request):
 
 def register_page(request):
     create_form = CreateUser()
-    context = {"form": create_form}
+    context = {
+        'form': create_form
+    }
     template = 'users/register.html'
     if request.method == "POST":
         user = CreateUser(request.POST, request.FILES)
 
         if user.is_valid():
             user.save()
-            context.setdefault("msg", "Successfully Added")
             return redirect('user.login')
-        return render(request, template, context)
+        else:
+            return render(request, template, context)
+    messages.add_message(request, messages.SUCCESS, f"Thanks for making an appointment, we will email you ASAP!")
+    messages.add_message(request, messages.ERROR, f"Something Went wrong")  
     return render(request, template, context)
 
 
